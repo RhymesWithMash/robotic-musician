@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="robotic_musician" exec="gesture"/>
+    <node pkg="robotic_musician" exec="music"/>
+</launch>

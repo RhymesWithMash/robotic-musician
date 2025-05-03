@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: robotic-musician
+Version: 0.0.0
+Summary: A robotic musician that can follow the conducting gestures of a user and play music in time.
+Maintainer: student
+Maintainer-email: sulliwj0@sewanee.edu
+License: Apache-2.0
+License-File: LICENSE

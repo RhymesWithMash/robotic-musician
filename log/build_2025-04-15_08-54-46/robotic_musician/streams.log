@@ -1,0 +1,25 @@
+[0.907s] Invoking command in '/home/student/robotic_musician/src/robotic_musician': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/student/robotic_musician/build/robotic_musician/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/robotic_musician/install/robotic_musician/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robotic_musician build --build-base /home/student/robotic_musician/build/robotic_musician/build install --record /home/student/robotic_musician/build/robotic_musician/install.log --single-version-externally-managed install_data
+[1.211s] running egg_info
+[1.252s] writing ../../build/robotic_musician/robotic_musician.egg-info/PKG-INFO
+[1.253s] writing dependency_links to ../../build/robotic_musician/robotic_musician.egg-info/dependency_links.txt
+[1.253s] writing entry points to ../../build/robotic_musician/robotic_musician.egg-info/entry_points.txt
+[1.254s] writing requirements to ../../build/robotic_musician/robotic_musician.egg-info/requires.txt
+[1.254s] writing top-level names to ../../build/robotic_musician/robotic_musician.egg-info/top_level.txt
+[1.286s] reading manifest file '../../build/robotic_musician/robotic_musician.egg-info/SOURCES.txt'
+[1.286s] adding license file 'LICENSE'
+[1.287s] writing manifest file '../../build/robotic_musician/robotic_musician.egg-info/SOURCES.txt'
+[1.287s] running build
+[1.287s] running build_py
+[1.287s] copying robotic_musician/gesture.py -> /home/student/robotic_musician/build/robotic_musician/build/lib/robotic_musician
+[1.287s] running install
+[1.292s] running install_lib
+[1.305s] copying /home/student/robotic_musician/build/robotic_musician/build/lib/robotic_musician/gesture.py -> /home/student/robotic_musician/install/robotic_musician/lib/python3.12/site-packages/robotic_musician
+[1.305s] byte-compiling /home/student/robotic_musician/install/robotic_musician/lib/python3.12/site-packages/robotic_musician/gesture.py to gesture.cpython-312.pyc
+[1.306s] running install_data
+[1.306s] running install_egg_info
+[1.336s] removing '/home/student/robotic_musician/install/robotic_musician/lib/python3.12/site-packages/robotic_musician-0.0.0-py3.12.egg-info' (and everything under it)
+[1.337s] Copying ../../build/robotic_musician/robotic_musician.egg-info to /home/student/robotic_musician/install/robotic_musician/lib/python3.12/site-packages/robotic_musician-0.0.0-py3.12.egg-info
+[1.339s] running install_scripts
+[1.478s] Installing gesture script to /home/student/robotic_musician/install/robotic_musician/lib/robotic_musician
+[1.478s] writing list of installed files to '/home/student/robotic_musician/build/robotic_musician/install.log'
+[1.498s] Invoked command in '/home/student/robotic_musician/src/robotic_musician' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/student/robotic_musician/build/robotic_musician/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/robotic_musician/install/robotic_musician/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robotic_musician build --build-base /home/student/robotic_musician/build/robotic_musician/build install --record /home/student/robotic_musician/build/robotic_musician/install.log --single-version-externally-managed install_data

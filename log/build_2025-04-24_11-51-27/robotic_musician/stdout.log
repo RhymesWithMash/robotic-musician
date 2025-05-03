@@ -1,0 +1,24 @@
+running egg_info
+writing ../build/robotic_musician/robotic_musician.egg-info/PKG-INFO
+writing dependency_links to ../build/robotic_musician/robotic_musician.egg-info/dependency_links.txt
+writing entry points to ../build/robotic_musician/robotic_musician.egg-info/entry_points.txt
+writing requirements to ../build/robotic_musician/robotic_musician.egg-info/requires.txt
+writing top-level names to ../build/robotic_musician/robotic_musician.egg-info/top_level.txt
+reading manifest file '../build/robotic_musician/robotic_musician.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../build/robotic_musician/robotic_musician.egg-info/SOURCES.txt'
+running build
+running build_py
+copying robotic_musician/music.py -> /home/student/robotic_musician/build/robotic_musician/build/lib/robotic_musician
+running install
+running install_lib
+copying /home/student/robotic_musician/build/robotic_musician/build/lib/robotic_musician/music.py -> /home/student/robotic_musician/install/robotic_musician/lib/python3.12/site-packages/robotic_musician
+byte-compiling /home/student/robotic_musician/install/robotic_musician/lib/python3.12/site-packages/robotic_musician/music.py to music.cpython-312.pyc
+running install_data
+running install_egg_info
+removing '/home/student/robotic_musician/install/robotic_musician/lib/python3.12/site-packages/robotic_musician-0.0.0-py3.12.egg-info' (and everything under it)
+Copying ../build/robotic_musician/robotic_musician.egg-info to /home/student/robotic_musician/install/robotic_musician/lib/python3.12/site-packages/robotic_musician-0.0.0-py3.12.egg-info
+running install_scripts
+Installing gesture script to /home/student/robotic_musician/install/robotic_musician/lib/robotic_musician
+Installing music script to /home/student/robotic_musician/install/robotic_musician/lib/robotic_musician
+writing list of installed files to '/home/student/robotic_musician/build/robotic_musician/install.log'

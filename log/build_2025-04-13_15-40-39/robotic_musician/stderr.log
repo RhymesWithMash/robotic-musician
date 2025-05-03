@@ -1,0 +1,5 @@
+  File "/home/student/robotic_musician/install/robotic_musician/lib/python3.12/site-packages/robotic_musician/gesture.py", line 2
+    from rclpy.node import nodefrom std_msgs.msg import Int32
+                                    ^^^^^^^^
+SyntaxError: invalid syntax
+

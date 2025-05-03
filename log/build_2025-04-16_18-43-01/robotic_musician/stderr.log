@@ -1,0 +1,5 @@
+  File "/home/student/robotic_musician/install/robotic_musician/lib/python3.12/site-packages/robotic_musician/music.py", line 24
+    if beat.data == i 
+                      ^
+SyntaxError: expected ':'
+

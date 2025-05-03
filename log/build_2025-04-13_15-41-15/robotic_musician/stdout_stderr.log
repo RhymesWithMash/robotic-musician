@@ -1,0 +1,26 @@
+running egg_info
+writing ../../build/robotic_musician/robotic_musician.egg-info/PKG-INFO
+writing dependency_links to ../../build/robotic_musician/robotic_musician.egg-info/dependency_links.txt
+writing entry points to ../../build/robotic_musician/robotic_musician.egg-info/entry_points.txt
+writing requirements to ../../build/robotic_musician/robotic_musician.egg-info/requires.txt
+writing top-level names to ../../build/robotic_musician/robotic_musician.egg-info/top_level.txt
+reading manifest file '../../build/robotic_musician/robotic_musician.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/robotic_musician/robotic_musician.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+  File "/home/student/robotic_musician/install/robotic_musician/lib/python3.12/site-packages/robotic_musician/gesture.py", line 2
+    from rclpy.node import nodefrom std_msgs.msg import Int32
+                                    ^^^^^^^^
+SyntaxError: invalid syntax
+
+byte-compiling /home/student/robotic_musician/install/robotic_musician/lib/python3.12/site-packages/robotic_musician/gesture.py to gesture.cpython-312.pyc
+running install_data
+running install_egg_info
+removing '/home/student/robotic_musician/install/robotic_musician/lib/python3.12/site-packages/robotic_musician-0.0.0-py3.12.egg-info' (and everything under it)
+Copying ../../build/robotic_musician/robotic_musician.egg-info to /home/student/robotic_musician/install/robotic_musician/lib/python3.12/site-packages/robotic_musician-0.0.0-py3.12.egg-info
+running install_scripts
+Installing gesture script to /home/student/robotic_musician/install/robotic_musician/lib/robotic_musician
+writing list of installed files to '/home/student/robotic_musician/build/robotic_musician/install.log'

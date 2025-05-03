@@ -1,0 +1,3 @@
+[console_scripts]
+gesture = robotic_musician.gesture:main
+music = robotic_musician.music:main
