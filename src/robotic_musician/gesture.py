@@ -35,7 +35,9 @@ class Gesture(Node):
         
         self.timer = self.create_timer(0.015, self.process_frame)  # 60 FPS
         
-
+    # Main function for processing openCV frames.
+    # Recognizes gesures and publishes integers 1-4 to the \gesture_topic publisher
+    # in time with the conductor's gestures.
     def process_frame(self):
         ret, frame = self.cap.read()
 
@@ -179,12 +181,11 @@ class Gesture(Node):
                 cv2.circle(frame, (x_pixel, y_pixel), 10, (0, 255, 0), -1)
                 # draw dot for smoothed data
                 cv2.circle(frame, (x_smooth_pixel, y_smooth_pixel), 10, (0, 0, 255), -1)
-                # self.get_logger().info(f"x: {self.x_norm:.4f}, y: {self.y_norm:.4f}")
-
 
         cv2.imshow('Gesture Detection', frame)  # open window
         cv2.waitKey(1)  # ensures GUI updates correctly (was having issues before)
 
+    
 def main(args = None):
     rclpy.init(args = args)
     node = Gesture() 

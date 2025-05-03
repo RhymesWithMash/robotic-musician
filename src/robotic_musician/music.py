@@ -11,6 +11,7 @@ import threading
 
 
 class Music(Node):
+    # Initializes node, GUI, and pygame mixer.
     def __init__(self):
         super().__init__('music')
         self.sps = 44100
@@ -29,6 +30,7 @@ class Music(Node):
         gui_thread = threading.Thread(target=self.setup_gui, daemon=True)
         gui_thread.start()
 
+    # Configures the tkinter GUI
     def setup_gui(self):
         self.window = tk.Tk()
         self.window.title("Pick Your Song")
@@ -105,21 +107,23 @@ class Music(Node):
 
         self.window.mainloop()
 
+    # Callback functions for tkinter GUI for switching songs
     def button1(self):
         self.song_file = open("odear.txt", "r")
         self.get_logger().info("O Dear Chosen")
         self.text = "O Dear Chosen"
-
     def button2(self):
         self.song_file = open("saints.txt", "r")
         self.get_logger().info("Saints chosen")
         self.text = "Saints Chosen"
-
     def button3(self):
         self.song_file = open("beethoven.txt", "r")
         self.get_logger().info("Beethoven chosen")
         self.text = "Beethoven Chosen"
 
+    # Main function, run on callback from subscription.
+    # Synthesizes music loading instructions from txt files.
+    # Takes in a subscription message and parses it for a beat message.
     def play_music(self, beat):
         self.then = self.now
         self.now = time.time()
@@ -127,7 +131,7 @@ class Music(Node):
 
         beat = int(beat.data)
 
-        # Read the next beat
+        # Read the next beat from file
         line = self.song_file.readline()
         if line == "":
             self.get_logger().info("Song finished. Once again, from the top...")
@@ -138,11 +142,11 @@ class Music(Node):
         duration = (1 / len(tones)) * duration_of_last_beat
         tones_hz = [440 * math.pow(2, int(n) / 12.0) for n in tones]
 
-        N = int(self.sps * duration)
+        N = int(self.sps * duration) # Find duration of tone in samples
         samples = []
         for i in range(len(tones_hz)):
             tone = tones_hz[i]
-            if i == len(tones_hz) - 1:
+            if i == len(tones_hz) - 1: # if it's the last tone in a beat
                 note_samples = [math.sin(2 * math.pi * j * tone / self.sps) for j in range(int(self.sps * 10))]
             else:
                 note_samples = [math.sin(2 * math.pi * j * tone / self.sps) for j in range(N)]
@@ -156,7 +160,6 @@ class Music(Node):
         self.current_sound = stdaudio.make_sound(samples)
         self.channel.play(self.current_sound)
 
-
 def main(args=None):
     rclpy.init(args=args)
     node = Music()
@@ -169,7 +172,6 @@ def main(args=None):
         if rclpy.ok():
             node.destroy_node()
             rclpy.shutdown()
-
 
 if __name__ == '__main__':
     main()
