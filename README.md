@@ -1,4 +1,5 @@
-# Robot Musician: TurtleBot4 Conductor
+# Robot Musician
+- By Will Sullivan, David Allen, and William Barr
 
 ## Overview
 This project uses a laptop's webcam to track a conductor's hand movements via a camera and translate them into musical performance. The system uses OpenCV and MediaPipe for gesture recognition and Pygame for audio synthesis.
@@ -28,7 +29,7 @@ This project uses a laptop's webcam to track a conductor's hand movements via a 
    ```
 
 ## Running
-1. Launch TurtleBot4:
+1. Launch Command:
    ```bash
    ros2 launch launch/launch.xml
    ```
